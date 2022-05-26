@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {}
+@layer base {
+  body {
+    background-color: #3D3D3D;
+  }
+  input {
+    outline: none;
+  }
+  input::placeholder {
+    color: #616161;
+  }
+  .cart {
+    @apply overflow-hidden
+      border
+      border-gray-900
+      relative
+      rounded
+      bg-blue-600
+      mx-10
+      mt-4
+      after:absolute
+      after:bottom-0
+      after:left-0
+      after:w-[100%]
+      after:h-1
+      after:bg-blue-600;
+  }
+  .cartHeader {
+    @apply w-[100%]
+      p-2
+      text-gray-900
+      text-center
+      text-2xl
+      font-[500]
+      bg-[transparent];
+  }
+  .cart-input {
+    @apply w-[100%]
+      rounded
+      py-[0px]
+      px-6
+      text-gray-900
+      text-[18px];
+  }
+  .btn-blue {
+    @apply px-5
+      py-1
+      text-gray-100
+      mx-[25%]
+      rounded
+      bg-blue-700
+      hover:scale-110;
+  }
+}
+@layer utilities {}
