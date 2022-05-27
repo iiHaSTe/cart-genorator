@@ -36,6 +36,7 @@
         :disc="cart.disc"
         :class="cart.class"/>
     </div>
+    
   </div>
 </template>
 
